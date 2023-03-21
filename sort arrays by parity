@@ -1,0 +1,25 @@
+class Solution {
+public:
+    vector<int> sortArrayByParity(vector<int>& nums) {
+        int no_ele=nums.size();
+        vector<int>ans;
+       
+        if(no_ele==1)
+        {
+            return nums;
+        }
+        for(int i=0;i<no_ele;i++)
+        {
+           if(nums[i]%2==0) 
+              ans.push_back(nums[i]);
+        }     
+            
+        for(int j=0;j<no_ele;j++)
+        {
+            if(nums[j]%2!=0)
+                ans.push_back(nums[j]);
+        }
+    return ans;
+    }
+        
+};
