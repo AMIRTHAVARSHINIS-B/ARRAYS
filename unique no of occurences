@@ -1,0 +1,21 @@
+LC:1207
+class Solution {
+public:
+    bool uniqueOccurrences(vector<int>& arr) {
+        map<int,int> freq;
+        set<int> s;
+        int no_ele=arr.size();
+        for(int i=0;i<no_ele;i++)
+        {
+            freq[arr[i]]++;
+        }
+        for(auto i:freq)
+        {
+            s.insert(.second);
+        }
+        if(s.size()==freq.size())
+            return true;
+        else
+            return false;
+    }
+};
