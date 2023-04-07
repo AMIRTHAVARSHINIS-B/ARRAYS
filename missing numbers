@@ -1,0 +1,22 @@
+class Solution {
+public:
+    int missingNumber(vector<int>& nums) {
+      sort(nums.begin(),nums.end());
+       
+        int no_ele=nums.size();
+        int j;
+      
+            for( j=0;j<no_ele;j++)
+            {
+            if( j!= nums[j])
+            
+                return j;
+            
+            }
+                
+                
+            
+        
+        return no_ele;
+    }
+};
